@@ -15,4 +15,4 @@ Instructions for setting up the project locally will be added here.
 Instructions for using the simulator will be added here.
 
 ## Contributors
-- Your Name (Your Role)
+- Suryansh Shukla
