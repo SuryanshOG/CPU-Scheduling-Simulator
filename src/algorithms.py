@@ -98,36 +98,3 @@ def priority_scheduling(processes):
         current_time += process['burst_time']
 
     return gantt_chart, waiting_times
-
-
-if __name__ == "__main__":
-    # Sample processes
-    processes = [
-        {"id": 1, "arrival_time": 0, "burst_time": 5, "priority": 2},
-        {"id": 2, "arrival_time": 1, "burst_time": 3, "priority": 1},
-        {"id": 3, "arrival_time": 2, "burst_time": 8, "priority": 3},
-    ]
-
-    # Test FCFS
-    print("FCFS:")
-    gantt_chart, waiting_times = fcfs_scheduling(processes)
-    print("Gantt Chart:", gantt_chart)
-    print("Waiting Times:", waiting_times)
-
-    # Test SJF
-    print("\nSJF:")
-    gantt_chart, waiting_times = sjf_scheduling(processes)
-    print("Gantt Chart:", gantt_chart)
-    print("Waiting Times:", waiting_times)
-
-    # Test Round Robin
-    print("\nRound Robin:")
-    gantt_chart, waiting_times = round_robin_scheduling(processes, time_quantum=3)
-    print("Gantt Chart:", gantt_chart)
-    print("Waiting Times:", waiting_times)
-
-    # Test Priority Scheduling
-    print("\nPriority Scheduling:")
-    gantt_chart, waiting_times = priority_scheduling(processes)
-    print("Gantt Chart:", gantt_chart)
-    print("Waiting Times:", waiting_times)
